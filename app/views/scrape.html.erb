@@ -1,0 +1,24 @@
+<table>
+	<tr>
+		<th>Lobbyist</th>
+		<th>Principal</th>
+		<th>Employed On</th>
+		<th>Issue Description</th>
+		<th>Issue Status</th>
+	</tr>
+	<% @entriesArray.each do |entry| %>
+		<tr>
+			<td><%= entry.lobbyist %></td>
+			<td><%= entry.principal %></td>
+			<td><%= entry.employed_on %></td>
+			<td><%= entry.issue_description %></td>
+			<td><%= entry.issue_status %></td>
+		</tr>
+	<% end %>
+</table>
+
+<style type="text/css">
+	th {
+		text-align: left;
+	}
+</style>
